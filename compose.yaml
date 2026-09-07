@@ -1,0 +1,63 @@
+x-runtime: &runtime
+  image: ${COMPOSE_PROJECT_NAME:-telemetry-clinic}-runtime
+  build:
+    context: .
+    target: runtime
+  pull_policy: never
+  platform: linux/amd64
+  user: "10001:10001"
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  pids_limit: 64
+  cpus: 0.5
+  mem_limit: 128m
+  memswap_limit: 128m
+  tmpfs: ["/tmp:size=16m,mode=1777"]
+  stop_grace_period: 8s
+services:
+  sink:
+    <<: *runtime
+    command: [python, container/app.py, sink]
+    networks: [delivery]
+    volumes: [sink-data:/data]
+    healthcheck:
+      test: [CMD, python, container/app.py, health, "http://127.0.0.1:8080/health"]
+      interval: 1s
+      timeout: 2s
+      retries: 20
+  collector:
+    <<: *runtime
+    image: ${COMPOSE_PROJECT_NAME:-telemetry-clinic}-collector
+    build:
+      context: .
+      target: collector
+    command: [otelcol-contrib, --config, /app/collector.yaml]
+    mem_limit: 512m
+    memswap_limit: 512m
+    networks: [ingress, delivery]
+    volumes: [collector-queue:/queue]
+    depends_on:
+      sink:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, container/app.py, health, "http://127.0.0.1:13133/"]
+      interval: 1s
+      timeout: 2s
+      retries: 20
+  producer:
+    <<: *runtime
+    profiles: [tools]
+    command: [python, container/app.py, produce, --prefix, manual]
+    networks: [ingress]
+    depends_on:
+      collector:
+        condition: service_healthy
+networks:
+  ingress:
+    internal: true
+  delivery:
+    internal: true
+volumes:
+  collector-queue:
+  sink-data:

@@ -1,0 +1,669 @@
+{
+  "attempts": [
+    {
+      "event_id": "normal-0000",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206058650281
+    },
+    {
+      "event_id": "normal-0001",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206068874585
+    },
+    {
+      "event_id": "normal-0002",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206079152535
+    },
+    {
+      "event_id": "normal-0003",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206089323146
+    },
+    {
+      "event_id": "normal-0004",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206099517583
+    },
+    {
+      "event_id": "normal-0005",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206109807619
+    },
+    {
+      "event_id": "normal-0006",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206120041385
+    },
+    {
+      "event_id": "normal-0007",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206130257397
+    },
+    {
+      "event_id": "normal-0008",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206140471397
+    },
+    {
+      "event_id": "normal-0009",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206150670914
+    },
+    {
+      "event_id": "normal-0010",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206160865556
+    },
+    {
+      "event_id": "normal-0011",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206171054288
+    },
+    {
+      "event_id": "normal-0012",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206181264051
+    },
+    {
+      "event_id": "normal-0013",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206191549096
+    },
+    {
+      "event_id": "normal-0014",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206201803059
+    },
+    {
+      "event_id": "normal-0015",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206212012909
+    },
+    {
+      "event_id": "normal-0016",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206222240501
+    },
+    {
+      "event_id": "normal-0017",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206232476548
+    },
+    {
+      "event_id": "normal-0018",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206242741215
+    },
+    {
+      "event_id": "normal-0019",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206253017161
+    },
+    {
+      "event_id": "normal-0020",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206263289375
+    },
+    {
+      "event_id": "normal-0021",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206273564917
+    },
+    {
+      "event_id": "normal-0022",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206283839872
+    },
+    {
+      "event_id": "normal-0023",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206294153906
+    },
+    {
+      "event_id": "normal-0024",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206304421758
+    },
+    {
+      "event_id": "normal-0025",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206314670077
+    },
+    {
+      "event_id": "normal-0026",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206324948835
+    },
+    {
+      "event_id": "normal-0027",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206335248238
+    },
+    {
+      "event_id": "normal-0028",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206345528230
+    },
+    {
+      "event_id": "normal-0029",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824206355803367
+    }
+  ],
+  "business": [
+    {
+      "enqueue_us": 8.682,
+      "event_id": "normal-0000",
+      "handler_us": 89.66,
+      "kernel_us": 80.978,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 16.254,
+      "event_id": "normal-0001",
+      "handler_us": 109.396,
+      "kernel_us": 93.142,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.853,
+      "event_id": "normal-0002",
+      "handler_us": 167.064,
+      "kernel_us": 152.211,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 8.519,
+      "event_id": "normal-0003",
+      "handler_us": 93.738,
+      "kernel_us": 85.219,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 12.621,
+      "event_id": "normal-0004",
+      "handler_us": 123.664,
+      "kernel_us": 111.043,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 10.868,
+      "event_id": "normal-0005",
+      "handler_us": 177.849,
+      "kernel_us": 166.981,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 12.741,
+      "event_id": "normal-0006",
+      "handler_us": 133.612,
+      "kernel_us": 120.871,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.752,
+      "event_id": "normal-0007",
+      "handler_us": 108.789,
+      "kernel_us": 94.037,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 11.664,
+      "event_id": "normal-0008",
+      "handler_us": 106.476,
+      "kernel_us": 94.812,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 11.628,
+      "event_id": "normal-0009",
+      "handler_us": 101.601,
+      "kernel_us": 89.973,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 11.288,
+      "event_id": "normal-0010",
+      "handler_us": 97.501,
+      "kernel_us": 86.213,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 8.33,
+      "event_id": "normal-0011",
+      "handler_us": 91.62,
+      "kernel_us": 83.29,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 18.102,
+      "event_id": "normal-0012",
+      "handler_us": 116.354,
+      "kernel_us": 98.252,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.686,
+      "event_id": "normal-0013",
+      "handler_us": 163.073,
+      "kernel_us": 145.387,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 16.044,
+      "event_id": "normal-0014",
+      "handler_us": 125.637,
+      "kernel_us": 109.593,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 10.728,
+      "event_id": "normal-0015",
+      "handler_us": 99.468,
+      "kernel_us": 88.74,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 12.225,
+      "event_id": "normal-0016",
+      "handler_us": 127.799,
+      "kernel_us": 115.574,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 10.218,
+      "event_id": "normal-0017",
+      "handler_us": 134.141,
+      "kernel_us": 123.923,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 19.785,
+      "event_id": "normal-0018",
+      "handler_us": 165.119,
+      "kernel_us": 145.334,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.841,
+      "event_id": "normal-0019",
+      "handler_us": 149.23,
+      "kernel_us": 134.389,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.414,
+      "event_id": "normal-0020",
+      "handler_us": 155.517,
+      "kernel_us": 140.103,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.135,
+      "event_id": "normal-0021",
+      "handler_us": 163.352,
+      "kernel_us": 146.217,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.213,
+      "event_id": "normal-0022",
+      "handler_us": 149.489,
+      "kernel_us": 134.276,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.235,
+      "event_id": "normal-0023",
+      "handler_us": 163.994,
+      "kernel_us": 148.759,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.521,
+      "event_id": "normal-0024",
+      "handler_us": 154.837,
+      "kernel_us": 140.316,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.726,
+      "event_id": "normal-0025",
+      "handler_us": 140.071,
+      "kernel_us": 125.345,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.784,
+      "event_id": "normal-0026",
+      "handler_us": 163.5,
+      "kernel_us": 145.716,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 18.694,
+      "event_id": "normal-0027",
+      "handler_us": 165.117,
+      "kernel_us": 146.423,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.854,
+      "event_id": "normal-0028",
+      "handler_us": 146.645,
+      "kernel_us": 131.791,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 13.074,
+      "event_id": "normal-0029",
+      "handler_us": 156.408,
+      "kernel_us": 143.334,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    }
+  ],
+  "exports": [
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206058650281,
+      "event_id": "normal-0000",
+      "export_ms": 27.438512,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206068874585,
+      "event_id": "normal-0001",
+      "export_ms": 0.790788,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206079152535,
+      "event_id": "normal-0002",
+      "export_ms": 0.604874,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206089323146,
+      "event_id": "normal-0003",
+      "export_ms": 0.585427,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206099517583,
+      "event_id": "normal-0004",
+      "export_ms": 0.922776,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206109807619,
+      "event_id": "normal-0005",
+      "export_ms": 1.2245,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206120041385,
+      "event_id": "normal-0006",
+      "export_ms": 1.018285,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206130257397,
+      "event_id": "normal-0007",
+      "export_ms": 0.968002,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206140471397,
+      "event_id": "normal-0008",
+      "export_ms": 0.826133,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206150670914,
+      "event_id": "normal-0009",
+      "export_ms": 0.888255,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206160865556,
+      "event_id": "normal-0010",
+      "export_ms": 0.749774,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206171054288,
+      "event_id": "normal-0011",
+      "export_ms": 0.692673,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206181264051,
+      "event_id": "normal-0012",
+      "export_ms": 0.743708,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206191549096,
+      "event_id": "normal-0013",
+      "export_ms": 1.188491,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206201803059,
+      "event_id": "normal-0014",
+      "export_ms": 0.789286,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206212012909,
+      "event_id": "normal-0015",
+      "export_ms": 0.607735,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206222240501,
+      "event_id": "normal-0016",
+      "export_ms": 0.667019,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206232476548,
+      "event_id": "normal-0017",
+      "export_ms": 0.528539,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206242741215,
+      "event_id": "normal-0018",
+      "export_ms": 0.605251,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206253017161,
+      "event_id": "normal-0019",
+      "export_ms": 0.650605,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206263289375,
+      "event_id": "normal-0020",
+      "export_ms": 0.710508,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206273564917,
+      "event_id": "normal-0021",
+      "export_ms": 0.647074,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206283839872,
+      "event_id": "normal-0022",
+      "export_ms": 0.636257,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206294153906,
+      "event_id": "normal-0023",
+      "export_ms": 0.928901,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206304421758,
+      "event_id": "normal-0024",
+      "export_ms": 0.808509,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206314670077,
+      "event_id": "normal-0025",
+      "export_ms": 0.933382,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206324948835,
+      "event_id": "normal-0026",
+      "export_ms": 0.804139,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206335248238,
+      "event_id": "normal-0027",
+      "export_ms": 0.796856,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206345528230,
+      "event_id": "normal-0028",
+      "export_ms": 0.638704,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824206355803367,
+      "event_id": "normal-0029",
+      "export_ms": 0.867511,
+      "http_status": 200,
+      "rejected_log_records": 0
+    }
+  ],
+  "uid": 10001
+}

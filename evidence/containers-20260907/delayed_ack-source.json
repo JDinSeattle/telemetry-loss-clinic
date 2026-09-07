@@ -1,0 +1,669 @@
+{
+  "attempts": [
+    {
+      "event_id": "delayed_ack-0000",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232245732295
+    },
+    {
+      "event_id": "delayed_ack-0001",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232255982427
+    },
+    {
+      "event_id": "delayed_ack-0002",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232266184481
+    },
+    {
+      "event_id": "delayed_ack-0003",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232326850860
+    },
+    {
+      "event_id": "delayed_ack-0004",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232337184679
+    },
+    {
+      "event_id": "delayed_ack-0005",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232347456169
+    },
+    {
+      "event_id": "delayed_ack-0006",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232357692871
+    },
+    {
+      "event_id": "delayed_ack-0007",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232367937845
+    },
+    {
+      "event_id": "delayed_ack-0008",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232378210262
+    },
+    {
+      "event_id": "delayed_ack-0009",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232388470401
+    },
+    {
+      "event_id": "delayed_ack-0010",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232398738815
+    },
+    {
+      "event_id": "delayed_ack-0011",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232409154005
+    },
+    {
+      "event_id": "delayed_ack-0012",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232419481104
+    },
+    {
+      "event_id": "delayed_ack-0013",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232429762299
+    },
+    {
+      "event_id": "delayed_ack-0014",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232440055593
+    },
+    {
+      "event_id": "delayed_ack-0015",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232450379489
+    },
+    {
+      "event_id": "delayed_ack-0016",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232460661108
+    },
+    {
+      "event_id": "delayed_ack-0017",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232470945959
+    },
+    {
+      "event_id": "delayed_ack-0018",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232481205826
+    },
+    {
+      "event_id": "delayed_ack-0019",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232491448066
+    },
+    {
+      "event_id": "delayed_ack-0020",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232501675448
+    },
+    {
+      "event_id": "delayed_ack-0021",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232511919799
+    },
+    {
+      "event_id": "delayed_ack-0022",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232522166378
+    },
+    {
+      "event_id": "delayed_ack-0023",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232532422878
+    },
+    {
+      "event_id": "delayed_ack-0024",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232542684715
+    },
+    {
+      "event_id": "delayed_ack-0025",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232552967651
+    },
+    {
+      "event_id": "delayed_ack-0026",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232563250609
+    },
+    {
+      "event_id": "delayed_ack-0027",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232573533127
+    },
+    {
+      "event_id": "delayed_ack-0028",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232583861643
+    },
+    {
+      "event_id": "delayed_ack-0029",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824232594111937
+    }
+  ],
+  "business": [
+    {
+      "enqueue_us": 11.246,
+      "event_id": "delayed_ack-0000",
+      "handler_us": 92.166,
+      "kernel_us": 80.92,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.088,
+      "event_id": "delayed_ack-0001",
+      "handler_us": 130.962,
+      "kernel_us": 115.874,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 7.917,
+      "event_id": "delayed_ack-0002",
+      "handler_us": 94.072,
+      "kernel_us": 86.155,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 16.716,
+      "event_id": "delayed_ack-0003",
+      "handler_us": 185.735,
+      "kernel_us": 169.019,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.905,
+      "event_id": "delayed_ack-0004",
+      "handler_us": 215.133,
+      "kernel_us": 197.228,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.32,
+      "event_id": "delayed_ack-0005",
+      "handler_us": 127.926,
+      "kernel_us": 113.606,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 19.465,
+      "event_id": "delayed_ack-0006",
+      "handler_us": 126.352,
+      "kernel_us": 106.887,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.708,
+      "event_id": "delayed_ack-0007",
+      "handler_us": 116.945,
+      "kernel_us": 101.237,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 19.137,
+      "event_id": "delayed_ack-0008",
+      "handler_us": 161.683,
+      "kernel_us": 142.546,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.469,
+      "event_id": "delayed_ack-0009",
+      "handler_us": 132.03,
+      "kernel_us": 114.561,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 16.241,
+      "event_id": "delayed_ack-0010",
+      "handler_us": 152.094,
+      "kernel_us": 135.853,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 25.316,
+      "event_id": "delayed_ack-0011",
+      "handler_us": 292.325,
+      "kernel_us": 267.009,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 13.413,
+      "event_id": "delayed_ack-0012",
+      "handler_us": 150.146,
+      "kernel_us": 136.733,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.006,
+      "event_id": "delayed_ack-0013",
+      "handler_us": 172.88,
+      "kernel_us": 155.874,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 44.579,
+      "event_id": "delayed_ack-0014",
+      "handler_us": 201.264,
+      "kernel_us": 156.685,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.966,
+      "event_id": "delayed_ack-0015",
+      "handler_us": 158.663,
+      "kernel_us": 140.697,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 19.782,
+      "event_id": "delayed_ack-0016",
+      "handler_us": 162.563,
+      "kernel_us": 142.781,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.555,
+      "event_id": "delayed_ack-0017",
+      "handler_us": 153.255,
+      "kernel_us": 137.7,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 13.801,
+      "event_id": "delayed_ack-0018",
+      "handler_us": 146.134,
+      "kernel_us": 132.333,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 10.76,
+      "event_id": "delayed_ack-0019",
+      "handler_us": 134.492,
+      "kernel_us": 123.732,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 10.491,
+      "event_id": "delayed_ack-0020",
+      "handler_us": 132.704,
+      "kernel_us": 122.213,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 16.002,
+      "event_id": "delayed_ack-0021",
+      "handler_us": 149.528,
+      "kernel_us": 133.526,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 12.199,
+      "event_id": "delayed_ack-0022",
+      "handler_us": 138.492,
+      "kernel_us": 126.293,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.311,
+      "event_id": "delayed_ack-0023",
+      "handler_us": 151.127,
+      "kernel_us": 136.816,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.757,
+      "event_id": "delayed_ack-0024",
+      "handler_us": 150.541,
+      "kernel_us": 135.784,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.674,
+      "event_id": "delayed_ack-0025",
+      "handler_us": 163.485,
+      "kernel_us": 145.811,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.789,
+      "event_id": "delayed_ack-0026",
+      "handler_us": 156.37,
+      "kernel_us": 140.581,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.832,
+      "event_id": "delayed_ack-0027",
+      "handler_us": 161.38,
+      "kernel_us": 145.548,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 13.73,
+      "event_id": "delayed_ack-0028",
+      "handler_us": 183.067,
+      "kernel_us": 169.337,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.834,
+      "event_id": "delayed_ack-0029",
+      "handler_us": 143.422,
+      "kernel_us": 127.588,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    }
+  ],
+  "exports": [
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232245732295,
+      "event_id": "delayed_ack-0000",
+      "export_ms": 83.743839,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232255982427,
+      "event_id": "delayed_ack-0001",
+      "export_ms": 0.731344,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232266184481,
+      "event_id": "delayed_ack-0002",
+      "export_ms": 0.513785,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232326850860,
+      "event_id": "delayed_ack-0003",
+      "export_ms": 0.490684,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232337184679,
+      "event_id": "delayed_ack-0004",
+      "export_ms": 1.146828,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232347456169,
+      "event_id": "delayed_ack-0005",
+      "export_ms": 0.809113,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232357692871,
+      "event_id": "delayed_ack-0006",
+      "export_ms": 1.004456,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232367937845,
+      "event_id": "delayed_ack-0007",
+      "export_ms": 0.761872,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232378210262,
+      "event_id": "delayed_ack-0008",
+      "export_ms": 1.292868,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232388470401,
+      "event_id": "delayed_ack-0009",
+      "export_ms": 0.888817,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232398738815,
+      "event_id": "delayed_ack-0010",
+      "export_ms": 0.810933,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232409154005,
+      "event_id": "delayed_ack-0011",
+      "export_ms": 1.341143,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232419481104,
+      "event_id": "delayed_ack-0012",
+      "export_ms": 0.678563,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232429762299,
+      "event_id": "delayed_ack-0013",
+      "export_ms": 0.620779,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232440055593,
+      "event_id": "delayed_ack-0014",
+      "export_ms": 0.796092,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232450379489,
+      "event_id": "delayed_ack-0015",
+      "export_ms": 0.709095,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232460661108,
+      "event_id": "delayed_ack-0016",
+      "export_ms": 0.910898,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232470945959,
+      "event_id": "delayed_ack-0017",
+      "export_ms": 0.87909,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232481205826,
+      "event_id": "delayed_ack-0018",
+      "export_ms": 0.853031,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232491448066,
+      "event_id": "delayed_ack-0019",
+      "export_ms": 0.761345,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232501675448,
+      "event_id": "delayed_ack-0020",
+      "export_ms": 0.599725,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232511919799,
+      "event_id": "delayed_ack-0021",
+      "export_ms": 0.801431,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232522166378,
+      "event_id": "delayed_ack-0022",
+      "export_ms": 0.699102,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232532422878,
+      "event_id": "delayed_ack-0023",
+      "export_ms": 0.638975,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232542684715,
+      "event_id": "delayed_ack-0024",
+      "export_ms": 0.663708,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232552967651,
+      "event_id": "delayed_ack-0025",
+      "export_ms": 0.987725,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232563250609,
+      "event_id": "delayed_ack-0026",
+      "export_ms": 1.018822,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232573533127,
+      "event_id": "delayed_ack-0027",
+      "export_ms": 1.027102,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232583861643,
+      "event_id": "delayed_ack-0028",
+      "export_ms": 0.934135,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824232594111937,
+      "event_id": "delayed_ack-0029",
+      "export_ms": 0.71003,
+      "http_status": 200,
+      "rejected_log_records": 0
+    }
+  ],
+  "uid": 10001
+}

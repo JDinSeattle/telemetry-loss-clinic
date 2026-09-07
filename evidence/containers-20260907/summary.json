@@ -1,0 +1,78 @@
+{
+  "attempted": 150,
+  "execution": "real local Docker container integration",
+  "performance_claim": null,
+  "scenario_count": 5,
+  "scenarios": [
+    {
+      "acknowledged_missing": [],
+      "attempted": 30,
+      "collector_acknowledged": 30,
+      "delivered_without_ack": [],
+      "duplicates": 0,
+      "export_unacknowledged": [],
+      "missing_all": [],
+      "scenario": "normal",
+      "sink_total": 30,
+      "sink_unique": 30,
+      "source_accepted": 30,
+      "source_dropped": []
+    },
+    {
+      "acknowledged_missing": [],
+      "attempted": 30,
+      "collector_acknowledged": 30,
+      "delivered_without_ack": [],
+      "duplicates": 0,
+      "export_unacknowledged": [],
+      "missing_all": [],
+      "scenario": "network_partition",
+      "sink_total": 30,
+      "sink_unique": 30,
+      "source_accepted": 30,
+      "source_dropped": []
+    },
+    {
+      "acknowledged_missing": [],
+      "attempted": 30,
+      "collector_acknowledged": 30,
+      "delivered_without_ack": [],
+      "duplicates": 0,
+      "export_unacknowledged": [],
+      "missing_all": [],
+      "scenario": "collector_recreate",
+      "sink_total": 30,
+      "sink_unique": 30,
+      "source_accepted": 30,
+      "source_dropped": []
+    },
+    {
+      "acknowledged_missing": [],
+      "attempted": 30,
+      "collector_acknowledged": 30,
+      "delivered_without_ack": [],
+      "duplicates": 0,
+      "export_unacknowledged": [],
+      "missing_all": [],
+      "scenario": "sink_recreate",
+      "sink_total": 30,
+      "sink_unique": 30,
+      "source_accepted": 30,
+      "source_dropped": []
+    },
+    {
+      "acknowledged_missing": [],
+      "attempted": 30,
+      "collector_acknowledged": 30,
+      "delivered_without_ack": [],
+      "duplicates": 4,
+      "export_unacknowledged": [],
+      "missing_all": [],
+      "scenario": "delayed_ack",
+      "sink_total": 34,
+      "sink_unique": 30,
+      "source_accepted": 30,
+      "source_dropped": []
+    }
+  ]
+}

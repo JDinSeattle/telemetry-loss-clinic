@@ -1,0 +1,4 @@
+make: Entering directory '/home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic'
+python3 scripts/validate_containers.py --out .runs/container
+{"scenarios": 5, "attempted": 150, "all_expected": true}
+make: Leaving directory '/home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic'

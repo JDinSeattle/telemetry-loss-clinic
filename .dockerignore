@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!clinic.py
+!workload.py
+!container/
+!container/app.py
+!container/collector.yaml

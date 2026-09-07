@@ -1,0 +1,167 @@
+{
+  "name": "cc-telemetry-101f7b90496a",
+  "networks": {
+    "delivery": {
+      "internal": true,
+      "ipam": {},
+      "name": "cc-telemetry-101f7b90496a_delivery"
+    },
+    "ingress": {
+      "internal": true,
+      "ipam": {},
+      "name": "cc-telemetry-101f7b90496a_ingress"
+    }
+  },
+  "services": {
+    "collector": {
+      "build": {
+        "context": "/home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic",
+        "dockerfile": "Dockerfile",
+        "target": "collector"
+      },
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "otelcol-contrib",
+        "--config",
+        "/app/collector.yaml"
+      ],
+      "cpus": 0.5,
+      "depends_on": {
+        "sink": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "healthcheck": {
+        "interval": "1s",
+        "retries": 20,
+        "test": [
+          "CMD",
+          "python",
+          "container/app.py",
+          "health",
+          "http://127.0.0.1:13133/"
+        ],
+        "timeout": "2s"
+      },
+      "image": "cc-telemetry-101f7b90496a-collector",
+      "mem_limit": "536870912",
+      "memswap_limit": "536870912",
+      "networks": {
+        "delivery": null,
+        "ingress": null
+      },
+      "pids_limit": 64,
+      "platform": "linux/amd64",
+      "pull_policy": "never",
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "stop_grace_period": "8s",
+      "tmpfs": [
+        "/tmp:size=16m,mode=1777"
+      ],
+      "user": "10001:10001",
+      "volumes": [
+        {
+          "source": "collector-queue",
+          "target": "/queue",
+          "type": "volume",
+          "volume": {}
+        }
+      ]
+    },
+    "sink": {
+      "build": {
+        "context": "/home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic",
+        "dockerfile": "Dockerfile",
+        "target": "runtime"
+      },
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python",
+        "container/app.py",
+        "sink"
+      ],
+      "cpus": 0.5,
+      "entrypoint": null,
+      "healthcheck": {
+        "interval": "1s",
+        "retries": 20,
+        "test": [
+          "CMD",
+          "python",
+          "container/app.py",
+          "health",
+          "http://127.0.0.1:8080/health"
+        ],
+        "timeout": "2s"
+      },
+      "image": "cc-telemetry-101f7b90496a-runtime",
+      "mem_limit": "134217728",
+      "memswap_limit": "134217728",
+      "networks": {
+        "delivery": null
+      },
+      "pids_limit": 64,
+      "platform": "linux/amd64",
+      "pull_policy": "never",
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "stop_grace_period": "8s",
+      "tmpfs": [
+        "/tmp:size=16m,mode=1777"
+      ],
+      "user": "10001:10001",
+      "volumes": [
+        {
+          "source": "sink-data",
+          "target": "/data",
+          "type": "volume",
+          "volume": {}
+        }
+      ]
+    }
+  },
+  "volumes": {
+    "collector-queue": {
+      "name": "cc-telemetry-101f7b90496a_collector-queue"
+    },
+    "sink-data": {
+      "name": "cc-telemetry-101f7b90496a_sink-data"
+    }
+  },
+  "x-runtime": {
+    "build": {
+      "context": ".",
+      "target": "runtime"
+    },
+    "cap_drop": [
+      "ALL"
+    ],
+    "cpus": 0.5,
+    "image": "cc-telemetry-101f7b90496a-runtime",
+    "mem_limit": "128m",
+    "memswap_limit": "128m",
+    "pids_limit": 64,
+    "platform": "linux/amd64",
+    "pull_policy": "never",
+    "read_only": true,
+    "security_opt": [
+      "no-new-privileges:true"
+    ],
+    "stop_grace_period": "8s",
+    "tmpfs": [
+      "/tmp:size=16m,mode=1777"
+    ],
+    "user": "10001:10001"
+  }
+}

@@ -1,0 +1,669 @@
+{
+  "attempts": [
+    {
+      "event_id": "network_partition-0000",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207839772299
+    },
+    {
+      "event_id": "network_partition-0001",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207849993484
+    },
+    {
+      "event_id": "network_partition-0002",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207861141456
+    },
+    {
+      "event_id": "network_partition-0003",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207871349425
+    },
+    {
+      "event_id": "network_partition-0004",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207881576683
+    },
+    {
+      "event_id": "network_partition-0005",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207891771930
+    },
+    {
+      "event_id": "network_partition-0006",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207901974726
+    },
+    {
+      "event_id": "network_partition-0007",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207912175264
+    },
+    {
+      "event_id": "network_partition-0008",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207922427744
+    },
+    {
+      "event_id": "network_partition-0009",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207932630157
+    },
+    {
+      "event_id": "network_partition-0010",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207942817414
+    },
+    {
+      "event_id": "network_partition-0011",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207952993702
+    },
+    {
+      "event_id": "network_partition-0012",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207963170576
+    },
+    {
+      "event_id": "network_partition-0013",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207973436264
+    },
+    {
+      "event_id": "network_partition-0014",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207983824819
+    },
+    {
+      "event_id": "network_partition-0015",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824207994172200
+    },
+    {
+      "event_id": "network_partition-0016",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208004421108
+    },
+    {
+      "event_id": "network_partition-0017",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208014684783
+    },
+    {
+      "event_id": "network_partition-0018",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208024937850
+    },
+    {
+      "event_id": "network_partition-0019",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208035172758
+    },
+    {
+      "event_id": "network_partition-0020",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208045375996
+    },
+    {
+      "event_id": "network_partition-0021",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208055661638
+    },
+    {
+      "event_id": "network_partition-0022",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208065964782
+    },
+    {
+      "event_id": "network_partition-0023",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208076231755
+    },
+    {
+      "event_id": "network_partition-0024",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208086457409
+    },
+    {
+      "event_id": "network_partition-0025",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208096680208
+    },
+    {
+      "event_id": "network_partition-0026",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208106905432
+    },
+    {
+      "event_id": "network_partition-0027",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208117129790
+    },
+    {
+      "event_id": "network_partition-0028",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208127356238
+    },
+    {
+      "event_id": "network_partition-0029",
+      "rejection_reason": null,
+      "source_accepted": true,
+      "unix_ns": 1788824208137652818
+    }
+  ],
+  "business": [
+    {
+      "enqueue_us": 10.476,
+      "event_id": "network_partition-0000",
+      "handler_us": 115.726,
+      "kernel_us": 105.25,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.08,
+      "event_id": "network_partition-0001",
+      "handler_us": 107.715,
+      "kernel_us": 92.635,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 9.328,
+      "event_id": "network_partition-0002",
+      "handler_us": 94.249,
+      "kernel_us": 84.921,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.293,
+      "event_id": "network_partition-0003",
+      "handler_us": 111.596,
+      "kernel_us": 96.303,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 9.897,
+      "event_id": "network_partition-0004",
+      "handler_us": 95.965,
+      "kernel_us": 86.068,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 12.368,
+      "event_id": "network_partition-0005",
+      "handler_us": 101.498,
+      "kernel_us": 89.13,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 10.125,
+      "event_id": "network_partition-0006",
+      "handler_us": 102.224,
+      "kernel_us": 92.099,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 8.737,
+      "event_id": "network_partition-0007",
+      "handler_us": 101.974,
+      "kernel_us": 93.237,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 11.722,
+      "event_id": "network_partition-0008",
+      "handler_us": 158.733,
+      "kernel_us": 147.011,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 10.741,
+      "event_id": "network_partition-0009",
+      "handler_us": 98.612,
+      "kernel_us": 87.871,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 7.861,
+      "event_id": "network_partition-0010",
+      "handler_us": 90.852,
+      "kernel_us": 82.991,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 7.952,
+      "event_id": "network_partition-0011",
+      "handler_us": 91.545,
+      "kernel_us": 83.593,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 9.06,
+      "event_id": "network_partition-0012",
+      "handler_us": 91.596,
+      "kernel_us": 82.536,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 13.971,
+      "event_id": "network_partition-0013",
+      "handler_us": 170.245,
+      "kernel_us": 156.274,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.311,
+      "event_id": "network_partition-0014",
+      "handler_us": 269.88,
+      "kernel_us": 252.569,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 17.903,
+      "event_id": "network_partition-0015",
+      "handler_us": 210.048,
+      "kernel_us": 192.145,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 15.071,
+      "event_id": "network_partition-0016",
+      "handler_us": 120.174,
+      "kernel_us": 105.103,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.423,
+      "event_id": "network_partition-0017",
+      "handler_us": 155.575,
+      "kernel_us": 141.152,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 13.171,
+      "event_id": "network_partition-0018",
+      "handler_us": 139.887,
+      "kernel_us": 126.716,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.564,
+      "event_id": "network_partition-0019",
+      "handler_us": 123.063,
+      "kernel_us": 108.499,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 9.044,
+      "event_id": "network_partition-0020",
+      "handler_us": 98.394,
+      "kernel_us": 89.35,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 18.163,
+      "event_id": "network_partition-0021",
+      "handler_us": 185.305,
+      "kernel_us": 167.142,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 18.276,
+      "event_id": "network_partition-0022",
+      "handler_us": 175.749,
+      "kernel_us": 157.473,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.537,
+      "event_id": "network_partition-0023",
+      "handler_us": 135.494,
+      "kernel_us": 120.957,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 13.879,
+      "event_id": "network_partition-0024",
+      "handler_us": 113.278,
+      "kernel_us": 99.399,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 12.977,
+      "event_id": "network_partition-0025",
+      "handler_us": 110.849,
+      "kernel_us": 97.872,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 16.042,
+      "event_id": "network_partition-0026",
+      "handler_us": 117.443,
+      "kernel_us": 101.401,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.244,
+      "event_id": "network_partition-0027",
+      "handler_us": 107.623,
+      "kernel_us": 93.379,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 14.254,
+      "event_id": "network_partition-0028",
+      "handler_us": 115.368,
+      "kernel_us": 101.114,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    },
+    {
+      "enqueue_us": 18.98,
+      "event_id": "network_partition-0029",
+      "handler_us": 181.488,
+      "kernel_us": 162.508,
+      "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+      "source_accepted": true
+    }
+  ],
+  "exports": [
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207839772299,
+      "event_id": "network_partition-0000",
+      "export_ms": 22.633087,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207849993484,
+      "event_id": "network_partition-0001",
+      "export_ms": 0.720621,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207861141456,
+      "event_id": "network_partition-0002",
+      "export_ms": 0.582829,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207871349425,
+      "event_id": "network_partition-0003",
+      "export_ms": 0.603986,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207881576683,
+      "event_id": "network_partition-0004",
+      "export_ms": 0.564625,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207891771930,
+      "event_id": "network_partition-0005",
+      "export_ms": 0.657048,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207901974726,
+      "event_id": "network_partition-0006",
+      "export_ms": 0.613418,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207912175264,
+      "event_id": "network_partition-0007",
+      "export_ms": 0.529239,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207922427744,
+      "event_id": "network_partition-0008",
+      "export_ms": 0.618882,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207932630157,
+      "event_id": "network_partition-0009",
+      "export_ms": 0.59922,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207942817414,
+      "event_id": "network_partition-0010",
+      "export_ms": 0.653656,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207952993702,
+      "event_id": "network_partition-0011",
+      "export_ms": 0.575192,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207963170576,
+      "event_id": "network_partition-0012",
+      "export_ms": 0.49702,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207973436264,
+      "event_id": "network_partition-0013",
+      "export_ms": 0.763402,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207983824819,
+      "event_id": "network_partition-0014",
+      "export_ms": 0.911279,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824207994172200,
+      "event_id": "network_partition-0015",
+      "export_ms": 0.919234,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208004421108,
+      "event_id": "network_partition-0016",
+      "export_ms": 0.62719,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208014684783,
+      "event_id": "network_partition-0017",
+      "export_ms": 7.022006,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208024937850,
+      "event_id": "network_partition-0018",
+      "export_ms": 0.802487,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208035172758,
+      "event_id": "network_partition-0019",
+      "export_ms": 0.650418,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208045375996,
+      "event_id": "network_partition-0020",
+      "export_ms": 0.47117,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208055661638,
+      "event_id": "network_partition-0021",
+      "export_ms": 0.776058,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208065964782,
+      "event_id": "network_partition-0022",
+      "export_ms": 0.945514,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208076231755,
+      "event_id": "network_partition-0023",
+      "export_ms": 0.707629,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208086457409,
+      "event_id": "network_partition-0024",
+      "export_ms": 0.772431,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208096680208,
+      "event_id": "network_partition-0025",
+      "export_ms": 0.802369,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208106905432,
+      "event_id": "network_partition-0026",
+      "export_ms": 0.721848,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208117129790,
+      "event_id": "network_partition-0027",
+      "export_ms": 0.721192,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208127356238,
+      "event_id": "network_partition-0028",
+      "export_ms": 0.778981,
+      "http_status": 200,
+      "rejected_log_records": 0
+    },
+    {
+      "collector_accepted": true,
+      "created_unix_ns": 1788824208137652818,
+      "event_id": "network_partition-0029",
+      "export_ms": 0.672714,
+      "http_status": 200,
+      "rejected_log_records": 0
+    }
+  ],
+  "uid": 10001
+}

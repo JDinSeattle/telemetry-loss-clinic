@@ -1,0 +1,17 @@
+{
+  "mounts": [
+    {
+      "Destination": "/data",
+      "Driver": "local",
+      "Mode": "rw",
+      "Name": "cc-telemetry-101f7b90496a_sink-data",
+      "Propagation": "",
+      "RW": true,
+      "Source": "/var/lib/docker/volumes/cc-telemetry-101f7b90496a_sink-data/_data",
+      "Type": "volume"
+    }
+  ],
+  "new_id": "5ae7428b12db678953ce02a46a67d2ddd51c3ffb8eb9c205c61074639c20f719",
+  "old_id": "bb54a4f2496f03f6d82736797f32108c965a98df2c938fa61d260698c4a10187",
+  "records_preserved": 90
+}

@@ -1,0 +1,26 @@
+{
+  "collector": {
+    "cap_eff": "0000000000000000",
+    "cgroup": {
+      "cpu.max": "50000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "64"
+    },
+    "no_new_privs": "1",
+    "uid": 10001,
+    "write_errno": 30
+  },
+  "sink": {
+    "cap_eff": "0000000000000000",
+    "cgroup": {
+      "cpu.max": "50000 100000",
+      "memory.max": "134217728",
+      "memory.swap.max": "0",
+      "pids.max": "64"
+    },
+    "no_new_privs": "1",
+    "uid": 10001,
+    "write_errno": 30
+  }
+}

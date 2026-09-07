@@ -1,0 +1,54 @@
+{
+  "killed_state": {
+    "Dead": false,
+    "Error": "",
+    "ExitCode": 137,
+    "FinishedAt": "2026-09-07T23:36:52.184070578Z",
+    "Health": {
+      "FailingStreak": 0,
+      "Log": [
+        {
+          "End": "2026-09-07T16:36:45.539662453-07:00",
+          "ExitCode": 0,
+          "Output": "",
+          "Start": "2026-09-07T16:36:44.239739058-07:00"
+        },
+        {
+          "End": "2026-09-07T16:36:47.114225872-07:00",
+          "ExitCode": 0,
+          "Output": "",
+          "Start": "2026-09-07T16:36:46.540840822-07:00"
+        },
+        {
+          "End": "2026-09-07T16:36:48.669208336-07:00",
+          "ExitCode": 0,
+          "Output": "",
+          "Start": "2026-09-07T16:36:48.114898042-07:00"
+        },
+        {
+          "End": "2026-09-07T16:36:50.15521664-07:00",
+          "ExitCode": 0,
+          "Output": "",
+          "Start": "2026-09-07T16:36:49.670362403-07:00"
+        },
+        {
+          "End": "2026-09-07T16:36:51.67806444-07:00",
+          "ExitCode": 0,
+          "Output": "",
+          "Start": "2026-09-07T16:36:51.156118806-07:00"
+        }
+      ],
+      "Status": "unhealthy"
+    },
+    "OOMKilled": false,
+    "Paused": false,
+    "Pid": 0,
+    "Restarting": false,
+    "Running": false,
+    "StartedAt": "2026-09-07T23:36:39.924773438Z",
+    "Status": "exited"
+  },
+  "new_id": "d601eb12986cb3af89058c4d763c96c1a5434fa938c6d2277cfbdbb74d0b4896",
+  "old_id": "4edec6c8d3800c56c41e8f21e9af93d1285da167500d9d8db8cb2d08c111269a",
+  "same_volume": "cc-telemetry-101f7b90496a_collector-queue"
+}

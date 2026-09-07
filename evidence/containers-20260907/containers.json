@@ -1,0 +1,234 @@
+{
+  "collector": {
+    "cap_drop": [
+      "ALL"
+    ],
+    "cmd": [
+      "otelcol-contrib",
+      "--config",
+      "/app/collector.yaml"
+    ],
+    "entrypoint": null,
+    "health": {
+      "FailingStreak": 0,
+      "Log": [
+        {
+          "End": "2026-09-07T16:36:41.66521292-07:00",
+          "ExitCode": 0,
+          "Output": "",
+          "Start": "2026-09-07T16:36:41.076865865-07:00"
+        }
+      ],
+      "Status": "healthy"
+    },
+    "id": "4edec6c8d3800c56c41e8f21e9af93d1285da167500d9d8db8cb2d08c111269a",
+    "image_id": "sha256:f517fbadec3af7525fe43c1d13cfdafea5cfa00e095258d6c5156f721c066b52",
+    "memory_bytes": 536870912,
+    "memory_swap_bytes": 536870912,
+    "mounts": [
+      {
+        "Destination": "/queue",
+        "Driver": "local",
+        "Mode": "rw",
+        "Name": "cc-telemetry-101f7b90496a_collector-queue",
+        "Propagation": "",
+        "RW": true,
+        "Source": "/var/lib/docker/volumes/cc-telemetry-101f7b90496a_collector-queue/_data",
+        "Type": "volume"
+      }
+    ],
+    "nano_cpus": 500000000,
+    "networks": {
+      "cc-telemetry-101f7b90496a_delivery": {
+        "Aliases": [
+          "cc-telemetry-101f7b90496a-collector-1",
+          "collector"
+        ],
+        "DNSNames": [
+          "cc-telemetry-101f7b90496a-collector-1",
+          "collector",
+          "4edec6c8d380"
+        ],
+        "DriverOpts": null,
+        "EndpointID": "adf6f3a65481074d133655f9b36da76179e57d530bfb25a32d2a4c788d49061d",
+        "Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "GwPriority": 0,
+        "IPAMConfig": null,
+        "IPAddress": "192.168.0.3",
+        "IPPrefixLen": 20,
+        "IPv6Gateway": "",
+        "Links": null,
+        "MacAddress": "12:51:6b:dc:29:a9",
+        "NetworkID": "2650a21a2726548a3d45aca834a69d1ad745297cbf2abee8539795a339990973"
+      },
+      "cc-telemetry-101f7b90496a_ingress": {
+        "Aliases": [
+          "cc-telemetry-101f7b90496a-collector-1",
+          "collector"
+        ],
+        "DNSNames": [
+          "cc-telemetry-101f7b90496a-collector-1",
+          "collector",
+          "4edec6c8d380"
+        ],
+        "DriverOpts": null,
+        "EndpointID": "4e7f0151966770c76f334e9be2f9fc122a4192909af437799c50c1c853201b88",
+        "Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "GwPriority": 0,
+        "IPAMConfig": null,
+        "IPAddress": "172.29.0.2",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "Links": null,
+        "MacAddress": "aa:06:94:b8:2b:d8",
+        "NetworkID": "6ff102b6f12d4b1fb22091a74f49896bc2e44c7efe0b029be23336e8f0ede7ce"
+      }
+    },
+    "pids_limit": 64,
+    "privileged": false,
+    "readonly_rootfs": true,
+    "security_opt": [
+      "no-new-privileges:true"
+    ],
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "End": "2026-09-07T16:36:41.66521292-07:00",
+            "ExitCode": 0,
+            "Output": "",
+            "Start": "2026-09-07T16:36:41.076865865-07:00"
+          }
+        ],
+        "Status": "healthy"
+      },
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 2425222,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-07T23:36:39.924773438Z",
+      "Status": "running"
+    },
+    "user": "10001:10001"
+  },
+  "sink": {
+    "cap_drop": [
+      "ALL"
+    ],
+    "cmd": [
+      "python",
+      "container/app.py",
+      "sink"
+    ],
+    "entrypoint": null,
+    "health": {
+      "FailingStreak": 0,
+      "Log": [
+        {
+          "End": "2026-09-07T16:36:39.546854297-07:00",
+          "ExitCode": 0,
+          "Output": "",
+          "Start": "2026-09-07T16:36:38.897795188-07:00"
+        },
+        {
+          "End": "2026-09-07T16:36:41.062001877-07:00",
+          "ExitCode": 0,
+          "Output": "",
+          "Start": "2026-09-07T16:36:40.547991881-07:00"
+        }
+      ],
+      "Status": "healthy"
+    },
+    "id": "bb54a4f2496f03f6d82736797f32108c965a98df2c938fa61d260698c4a10187",
+    "image_id": "sha256:bd69f1b52c1f8382bc40a41f2be14a5f18d23ebf3cb19e1c1f791b5d0b8cbedf",
+    "memory_bytes": 134217728,
+    "memory_swap_bytes": 134217728,
+    "mounts": [
+      {
+        "Destination": "/data",
+        "Driver": "local",
+        "Mode": "rw",
+        "Name": "cc-telemetry-101f7b90496a_sink-data",
+        "Propagation": "",
+        "RW": true,
+        "Source": "/var/lib/docker/volumes/cc-telemetry-101f7b90496a_sink-data/_data",
+        "Type": "volume"
+      }
+    ],
+    "nano_cpus": 500000000,
+    "networks": {
+      "cc-telemetry-101f7b90496a_delivery": {
+        "Aliases": [
+          "cc-telemetry-101f7b90496a-sink-1",
+          "sink"
+        ],
+        "DNSNames": [
+          "cc-telemetry-101f7b90496a-sink-1",
+          "sink",
+          "bb54a4f2496f"
+        ],
+        "DriverOpts": null,
+        "EndpointID": "51aad31675613878cf51db1dbabc6002dadf8d7e0dd774e7d93d1ebf77bc2dc0",
+        "Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "GwPriority": 0,
+        "IPAMConfig": null,
+        "IPAddress": "192.168.0.2",
+        "IPPrefixLen": 20,
+        "IPv6Gateway": "",
+        "Links": null,
+        "MacAddress": "96:d7:c5:61:9a:d4",
+        "NetworkID": "2650a21a2726548a3d45aca834a69d1ad745297cbf2abee8539795a339990973"
+      }
+    },
+    "pids_limit": 64,
+    "privileged": false,
+    "readonly_rootfs": true,
+    "security_opt": [
+      "no-new-privileges:true"
+    ],
+    "state": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "End": "2026-09-07T16:36:39.546854297-07:00",
+            "ExitCode": 0,
+            "Output": "",
+            "Start": "2026-09-07T16:36:38.897795188-07:00"
+          },
+          {
+            "End": "2026-09-07T16:36:41.062001877-07:00",
+            "ExitCode": 0,
+            "Output": "",
+            "Start": "2026-09-07T16:36:40.547991881-07:00"
+          }
+        ],
+        "Status": "healthy"
+      },
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 2424630,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-09-07T23:36:37.762241189Z",
+      "Status": "running"
+    },
+    "user": "10001:10001"
+  }
+}

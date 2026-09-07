@@ -1,0 +1,182 @@
+[
+  {
+    "created_unix_ns": 1788824211152103357,
+    "event_id": "collector_recreate-0001",
+    "received_unix_ns": 1788824216042226807,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211214962391,
+    "event_id": "collector_recreate-0002",
+    "received_unix_ns": 1788824216049338989,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211225228805,
+    "event_id": "collector_recreate-0003",
+    "received_unix_ns": 1788824216057223986,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211235433050,
+    "event_id": "collector_recreate-0004",
+    "received_unix_ns": 1788824216111020194,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211245640422,
+    "event_id": "collector_recreate-0005",
+    "received_unix_ns": 1788824216118113106,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211255851519,
+    "event_id": "collector_recreate-0006",
+    "received_unix_ns": 1788824216125202609,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211266062031,
+    "event_id": "collector_recreate-0007",
+    "received_unix_ns": 1788824216132067100,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211276260374,
+    "event_id": "collector_recreate-0008",
+    "received_unix_ns": 1788824216139062816,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211286498968,
+    "event_id": "collector_recreate-0009",
+    "received_unix_ns": 1788824216210198356,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211296773598,
+    "event_id": "collector_recreate-0010",
+    "received_unix_ns": 1788824216217849583,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211306956071,
+    "event_id": "collector_recreate-0011",
+    "received_unix_ns": 1788824216225209678,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211317208593,
+    "event_id": "collector_recreate-0012",
+    "received_unix_ns": 1788824216232375728,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211327368862,
+    "event_id": "collector_recreate-0013",
+    "received_unix_ns": 1788824216240162612,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211337564635,
+    "event_id": "collector_recreate-0014",
+    "received_unix_ns": 1788824216247225200,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211347762788,
+    "event_id": "collector_recreate-0015",
+    "received_unix_ns": 1788824216254312958,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211357940532,
+    "event_id": "collector_recreate-0016",
+    "received_unix_ns": 1788824216311360372,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211368124835,
+    "event_id": "collector_recreate-0017",
+    "received_unix_ns": 1788824216318950888,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211378306286,
+    "event_id": "collector_recreate-0018",
+    "received_unix_ns": 1788824216326624038,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211388548917,
+    "event_id": "collector_recreate-0019",
+    "received_unix_ns": 1788824216333831788,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211398771540,
+    "event_id": "collector_recreate-0020",
+    "received_unix_ns": 1788824216341319106,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211409006736,
+    "event_id": "collector_recreate-0021",
+    "received_unix_ns": 1788824216348607502,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211419264671,
+    "event_id": "collector_recreate-0022",
+    "received_unix_ns": 1788824216355940770,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211429509035,
+    "event_id": "collector_recreate-0023",
+    "received_unix_ns": 1788824216411015205,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211439750808,
+    "event_id": "collector_recreate-0024",
+    "received_unix_ns": 1788824216418598090,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211449932481,
+    "event_id": "collector_recreate-0025",
+    "received_unix_ns": 1788824216429388150,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211460115065,
+    "event_id": "collector_recreate-0026",
+    "received_unix_ns": 1788824216436620972,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211470289327,
+    "event_id": "collector_recreate-0027",
+    "received_unix_ns": 1788824216443786770,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211480510988,
+    "event_id": "collector_recreate-0028",
+    "received_unix_ns": 1788824216451246278,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211490758997,
+    "event_id": "collector_recreate-0029",
+    "received_unix_ns": 1788824216510061622,
+    "sink_mode": "normal"
+  },
+  {
+    "created_unix_ns": 1788824211141889405,
+    "event_id": "collector_recreate-0000",
+    "received_unix_ns": 1788824216517728419,
+    "sink_mode": "normal"
+  }
+]
