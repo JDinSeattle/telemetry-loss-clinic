@@ -1,0 +1,242 @@
+[
+  {
+    "enqueue_us": 8.997,
+    "event_id": "rate_limit-0000",
+    "handler_us": 101.289,
+    "kernel_us": 92.292,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 14.419,
+    "event_id": "rate_limit-0001",
+    "handler_us": 93.91,
+    "kernel_us": 79.491,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 16.784,
+    "event_id": "rate_limit-0002",
+    "handler_us": 171.851,
+    "kernel_us": 155.067,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 25.832,
+    "event_id": "rate_limit-0003",
+    "handler_us": 264.081,
+    "kernel_us": 238.249,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 15.244,
+    "event_id": "rate_limit-0004",
+    "handler_us": 175.188,
+    "kernel_us": 159.944,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 11.083,
+    "event_id": "rate_limit-0005",
+    "handler_us": 116.1,
+    "kernel_us": 105.017,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 28.871,
+    "event_id": "rate_limit-0006",
+    "handler_us": 295.084,
+    "kernel_us": 266.213,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 16.018,
+    "event_id": "rate_limit-0007",
+    "handler_us": 117.481,
+    "kernel_us": 101.463,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 14.55,
+    "event_id": "rate_limit-0008",
+    "handler_us": 109.925,
+    "kernel_us": 95.375,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 23.151,
+    "event_id": "rate_limit-0009",
+    "handler_us": 121.837,
+    "kernel_us": 98.686,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 10.046,
+    "event_id": "rate_limit-0010",
+    "handler_us": 105.856,
+    "kernel_us": 95.81,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 12.101,
+    "event_id": "rate_limit-0011",
+    "handler_us": 146.79,
+    "kernel_us": 134.689,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 9.405,
+    "event_id": "rate_limit-0012",
+    "handler_us": 132.41,
+    "kernel_us": 123.005,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 23.593,
+    "event_id": "rate_limit-0013",
+    "handler_us": 297.477,
+    "kernel_us": 273.884,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 8.419,
+    "event_id": "rate_limit-0014",
+    "handler_us": 113.539,
+    "kernel_us": 105.12,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 7.369,
+    "event_id": "rate_limit-0015",
+    "handler_us": 123.13,
+    "kernel_us": 115.761,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 18.885,
+    "event_id": "rate_limit-0016",
+    "handler_us": 238.695,
+    "kernel_us": 219.81,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 14.18,
+    "event_id": "rate_limit-0017",
+    "handler_us": 134.98,
+    "kernel_us": 120.8,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 18.241,
+    "event_id": "rate_limit-0018",
+    "handler_us": 178.286,
+    "kernel_us": 160.045,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 23.663,
+    "event_id": "rate_limit-0019",
+    "handler_us": 268.31,
+    "kernel_us": 244.647,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 20.313,
+    "event_id": "rate_limit-0020",
+    "handler_us": 199.188,
+    "kernel_us": 178.875,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 21.82,
+    "event_id": "rate_limit-0021",
+    "handler_us": 159.434,
+    "kernel_us": 137.614,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 18.893,
+    "event_id": "rate_limit-0022",
+    "handler_us": 207.202,
+    "kernel_us": 188.309,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 20.375,
+    "event_id": "rate_limit-0023",
+    "handler_us": 266.103,
+    "kernel_us": 245.728,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 16.606,
+    "event_id": "rate_limit-0024",
+    "handler_us": 201.044,
+    "kernel_us": 184.438,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 34.7,
+    "event_id": "rate_limit-0025",
+    "handler_us": 341.974,
+    "kernel_us": 307.274,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 19.302,
+    "event_id": "rate_limit-0026",
+    "handler_us": 166.063,
+    "kernel_us": 146.761,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 8.518,
+    "event_id": "rate_limit-0027",
+    "handler_us": 97.439,
+    "kernel_us": 88.921,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 17.047,
+    "event_id": "rate_limit-0028",
+    "handler_us": 138.6,
+    "kernel_us": 121.553,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 14.833,
+    "event_id": "rate_limit-0029",
+    "handler_us": 99.534,
+    "kernel_us": 84.701,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  }
+]

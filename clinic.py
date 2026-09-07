@@ -27,7 +27,8 @@ def send(endpoint, identifier, padding=0, created=None):
             rejected=int(result.get('partialSuccess',{}).get('rejectedLogRecords','0'))
             record['collector_accepted']=r.status==200 and rejected==0
             record['rejected_log_records']=rejected
-    except urllib.error.HTTPError as e: record.update(http_status=e.code,error=e.read().decode(errors='replace'))
+    except urllib.error.HTTPError as e:
+        with e: record.update(http_status=e.code,error=e.read().decode(errors='replace'))
     except OSError as e: record.update(http_status=None,error=type(e).__name__)
     except (ValueError,TypeError,AttributeError) as e: record.update(error='malformed collector acknowledgement: '+type(e).__name__)
     record['export_ms']=(time.monotonic_ns()-start)/1e6
@@ -36,29 +37,47 @@ def send(endpoint, identifier, padding=0, created=None):
 class Source:
     """Explicit bounded application export queue; intentionally no hidden SDK retries."""
     def __init__(self,endpoint,capacity=128,padding=0):
+        if type(capacity) is not int or capacity<1: raise ValueError('positive bounded capacity required')
         self.endpoint=endpoint; self.padding=padding; self.queue=queue.Queue(capacity)
+        self.state='open'; self.state_lock=threading.Lock();self.finish_lock=threading.Lock();self.stop_sent=False
         self.attempts=[]; self.results=[]; self.thread=threading.Thread(target=self.run,daemon=True); self.thread.start()
     def publish(self,identifier):
         created=time.time_ns()
-        try: self.queue.put_nowait((identifier,created)); accepted=True
-        except queue.Full: accepted=False
-        self.attempts.append({'event_id':identifier,'source_accepted':accepted,'unix_ns':created})
-        return accepted
+        with self.state_lock:
+            reason=None;accepted=False
+            if self.state!='open': reason='source_closing_or_closed'
+            else:
+                try: self.queue.put_nowait((identifier,created)); accepted=True
+                except queue.Full: reason='source_queue_full'
+            self.attempts.append({'event_id':identifier,'source_accepted':accepted,'unix_ns':created,'rejection_reason':reason})
+            return accepted
     def run(self):
         while True:
             identifier=self.queue.get()
             try:
                 if identifier is None: return
                 event_id,created=identifier
-                self.results.append(send(self.endpoint,event_id,self.padding,created))
+                try: result=send(self.endpoint,event_id,self.padding,created)
+                except Exception as e:
+                    result={'event_id':event_id,'collector_accepted':False,'error':'exporter_exception:'+type(e).__name__}
+                with self.state_lock: self.results.append(result)
             finally: self.queue.task_done()
     def finish(self,timeout=15):
+        if timeout<=0: raise ValueError('positive finish timeout required')
         deadline=time.monotonic()+timeout
-        while self.queue.unfinished_tasks:
-            if not self.thread.is_alive() or time.monotonic()>deadline: raise RuntimeError('source drain failed or timed out')
-            time.sleep(.005)
-        self.queue.put(None); self.thread.join(timeout=5)
-        if self.thread.is_alive(): raise RuntimeError('source failed to stop')
+        if not self.finish_lock.acquire(timeout=timeout): raise TimeoutError('concurrent source close deadline')
+        try:
+            with self.state_lock:
+                if self.state=='closed': return
+                self.state='closing'
+            if not self.stop_sent:
+                try: self.queue.put(None,timeout=max(0,deadline-time.monotonic()))
+                except queue.Full as e: raise TimeoutError('source queue drain deadline') from e
+                self.stop_sent=True
+            self.thread.join(timeout=max(0,deadline-time.monotonic()))
+            if self.thread.is_alive(): raise TimeoutError('source export drain deadline')
+            with self.state_lock: self.state='closed'
+        finally: self.finish_lock.release()
 
 class Sink(http.server.ThreadingHTTPServer):
     daemon_threads=True

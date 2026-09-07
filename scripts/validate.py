@@ -3,7 +3,7 @@ import argparse, contextlib, json, math, os, pathlib, resource, signal, socket, 
 ROOT=pathlib.Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
 from clinic import Sink, Source, reconcile
 from evidence import command, digest, fresh, seal, write
-from scripts.setup import setup
+from scripts.setup import setup, PINS, VERSION
 from workload import ProjectionService
 
 def port():
@@ -32,6 +32,8 @@ exporters:
       enabled: true
       num_consumers: 1
       queue_size: {capacity}
+      batch:
+        enabled: false
 '''
     if storage: data+=f'      storage: file_storage\nextensions:\n  file_storage:\n    directory: {storage}\n'
     data+='service:\n'
@@ -163,15 +165,16 @@ def scenario(binary,out,name):
         sink.shutdown(); sink.server_close(); thread.join(timeout=5)
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--out',default='.runs/latest'); args=ap.parse_args()
+    ap=argparse.ArgumentParser(); ap.add_argument('--out',default='.runs/latest'); ap.add_argument('--collector-version',choices=sorted(PINS),default=VERSION); args=ap.parse_args()
     out=fresh(ROOT,args.out)
-    binary=setup(); version=command([str(binary),'--version']).strip()
-    assert '0.147.0' in version,version
+    binary=setup(args.collector_version); version=command([str(binary),'--version']).strip()
+    assert args.collector_version in version,version
     rows=[]
     for name in ['normal','outage','disconnect','rate_limit','slow_ack','memory_crash','persistent_crash','queue_full','storage_limit','source_queue_full']:
         r=scenario(binary,out,name); rows.append(r); print(json.dumps(r),flush=True)
     write(out/'summary.json',rows)
     seal(ROOT,out,{'collector_version':version,'collector_binary_sha256':digest(binary),
+        'exporter_batching':'explicitly disabled; clean storage per version, no in-place WAL migration claim',
         'signal':'OTLP logs only','source':'custom explicit bounded OTLP/HTTP writer, not official language SDK',
         'disk_fault':'per-process RLIMIT_FSIZE 256 KiB; EFBIG, not a filesystem ENOSPC or power-loss simulation',
         'ack_semantics':'source queue acceptance != Collector HTTP acceptance != receiver fsync; no exactly-once claim'})

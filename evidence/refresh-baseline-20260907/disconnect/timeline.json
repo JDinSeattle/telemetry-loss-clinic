@@ -1,0 +1,10 @@
+[
+  {
+    "event": "source_drained",
+    "unix_ns": 1788820959137579437
+  },
+  {
+    "event": "sink_recovery",
+    "unix_ns": 1788820959137581396
+  }
+]

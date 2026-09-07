@@ -4,9 +4,15 @@
 
 A real OpenTelemetry Collector failure laboratory with an explicit Python export queue, a small projection service, and a self-written OTLP/HTTP receiver that fsyncs each accepted log before acknowledging it. Fixed event IDs make every source drop, unacknowledged export, duplicate and acknowledged-but-missing event inspectable.
 
-Ten experiments exercise normal delivery, receiver outage, connection disconnect, HTTP 429, delayed ACK, memory queue SIGKILL, persistent queue SIGKILL, Collector queue overflow, persistent file capacity, and source queue overflow. This uses the **real contrib 0.147.0 binary**, including `file_storage`; it does not simulate Collector retry logic. The source writer is explicit custom OTLP code, **not the official Python SDK**.
+Ten experiments exercise normal delivery, receiver outage, connection disconnect, HTTP 429, delayed ACK, memory queue SIGKILL, persistent queue SIGKILL, Collector queue overflow, persistent file capacity, and source queue overflow. This uses the **real contrib 0.160.0 and 0.147.0 binaries**, including `file_storage`; it does not simulate Collector retry logic. The source writer is explicit custom OTLP code, **not the official Python SDK**.
 
 In the recorded crash pair, all 30 acknowledged memory-queued logs are missing after restart while the persistent run delivers all 30. Delaying ACK after fsync creates duplicates. A 256 KiB file limit produces real EFBIG errors and acknowledged data loss: persistence is not an unconditional zero-loss guarantee.
+
+## September 2026 maintenance
+
+Source admission and the open/closing/closed transition now share a lock. Once closing begins, later publications return false with an explicit reason. Serialized, idempotent finish uses one absolute deadline for sentinel admission and exporter join; a timed-out close can be retried. Concurrent real HTTP producers and close reconcile all accepted event IDs. The clean-storage fault campaign now runs on checksum-pinned Collector 0.147.0 and 0.160.0, with exporter batching explicitly disabled.
+
+[Design, acceptance tests and limits](docs/refresh-20260907.md) · [Current measured results](docs/refresh-results-20260907.md). CI repeats validation on Python 3.12 and 3.14.7.
 
 ## Reproduce
 

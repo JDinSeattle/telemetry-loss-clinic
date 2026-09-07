@@ -1,0 +1,11 @@
+{
+  "baseline_commit": "99d7505325ebc0ace60a47e5815f4e13326e804b",
+  "observed_before_edit": {
+    "project": "B",
+    "case": "publish_after_closed",
+    "accepted": true,
+    "thread_alive": false,
+    "expected": "rejected"
+  },
+  "reproduction_after_fix": "tests/test_source_lifecycle.py"
+}

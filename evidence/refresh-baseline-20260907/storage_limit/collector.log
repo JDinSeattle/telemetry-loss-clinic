@@ -1,0 +1,556 @@
+2026-09-07T15:42:52.988-0700	info	service@v0.147.0/service.go:241	Starting otelcol-contrib...	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "Version": "0.147.0", "NumCPU": 32}
+2026-09-07T15:42:52.988-0700	info	extensions/extensions.go:40	Starting extensions...	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}}
+2026-09-07T15:42:52.988-0700	info	extensions/extensions.go:44	Extension is starting...	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "file_storage", "otelcol.component.kind": "extension"}
+2026-09-07T15:42:52.988-0700	info	extensions/extensions.go:61	Extension started.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "file_storage", "otelcol.component.kind": "extension"}
+2026-09-07T15:42:53.001-0700	info	queue/persistent_queue.go:166	New queue metadata key not found, attempting to load legacy format.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
+2026-09-07T15:42:53.001-0700	info	queue/persistent_queue.go:213	Initializing new persistent queue	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
+2026-09-07T15:42:53.001-0700	info	queue/persistent_queue.go:241	Successfully migrated to consolidated metadata format	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs"}
+2026-09-07T15:42:53.001-0700	info	otlpreceiver@v0.147.0/otlp.go:175	Starting HTTP server	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp", "otelcol.component.kind": "receiver", "endpoint": "127.0.0.1:35281"}
+2026-09-07T15:42:53.001-0700	info	service@v0.147.0/service.go:264	Everything is ready. Begin running and processing data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}}
+2026-09-07T15:42:53.094-0700	info	internal/retry_sender.go:133	Exporting failed. Will retry the request after interval.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "Throttle (1s), error: rpc error: code = Unavailable desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 503, Message=, Details=[]", "interval": "1s"}
+2026-09-07T15:42:53.184-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:53.195-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:53.207-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:53.218-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:53.228-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:53.238-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:53.249-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:53.262-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:53.272-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:53.282-0700	error	internal/base_exporter.go:115	Exporting failed. Rejecting data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large", "rejected_items": 1}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.(*BaseExporter).Send
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/base_exporter.go:115
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewLogsRequest.newConsumeLogs.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/new_request.go:70
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/service/internal/refconsumer.refLogs.ConsumeLogs
+	go.opentelemetry.io/collector/service@v0.147.0/internal/refconsumer/logs.go:29
+go.opentelemetry.io/collector/consumer.ConsumeLogsFunc.ConsumeLogs
+	go.opentelemetry.io/collector/consumer@v1.53.0/logs.go:27
+go.opentelemetry.io/collector/receiver/otlpreceiver/internal/logs.(*Receiver).Export
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/internal/logs/otlp.go:41
+go.opentelemetry.io/collector/receiver/otlpreceiver.handleLogs
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlphttp.go:108
+go.opentelemetry.io/collector/receiver/otlpreceiver.(*otlpReceiver).startHTTPServer.func3
+	go.opentelemetry.io/collector/receiver/otlpreceiver@v0.147.0/otlp.go:155
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+net/http.(*ServeMux).ServeHTTP
+	net/http/server.go:2828
+go.opentelemetry.io/collector/config/confighttp.(*decompressor).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/compression.go:277
+go.opentelemetry.io/collector/config/confighttp.(*ServerConfig).ToServer.maxRequestBodySizeInterceptor.func2
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/server.go:384
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.(*middleware).serveHTTP
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:178
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp.NewMiddleware.func1.1
+	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@v0.65.0/handler.go:66
+net/http.HandlerFunc.ServeHTTP
+	net/http/server.go:2286
+go.opentelemetry.io/collector/config/confighttp.(*clientInfoHandler).ServeHTTP
+	go.opentelemetry.io/collector/config/confighttp@v0.147.0/clientinfohandler.go:26
+net/http.serverHandler.ServeHTTP
+	net/http/server.go:3311
+net/http.(*conn).serve
+	net/http/server.go:2073
+2026-09-07T15:42:54.103-0700	warn	queue/persistent_queue.go:532	Failed updating currently dispatched items, trying to delete the item first	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+2026-09-07T15:42:54.103-0700	error	queue/persistent_queue.go:421	Error deleting item from queue	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "failed deleting item from queue, got error from storage: file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).onDone
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:421
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*indexDone).OnDone
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:626
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.103-0700	warn	queue/persistent_queue.go:532	Failed updating currently dispatched items, trying to delete the item first	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+2026-09-07T15:42:54.103-0700	error	queue/persistent_queue.go:380	Error deleting item from queue	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "failed deleting item from queue, got error from storage: file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).getNextItem
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:380
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).Read
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:333
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:43
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.103-0700	warn	queue/persistent_queue.go:532	Failed updating currently dispatched items, trying to delete the item first	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+2026-09-07T15:42:54.104-0700	error	queue/persistent_queue.go:380	Error deleting item from queue	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "failed deleting item from queue, got error from storage: file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).getNextItem
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:380
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).Read
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:333
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:43
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.104-0700	warn	queue/persistent_queue.go:532	Failed updating currently dispatched items, trying to delete the item first	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+2026-09-07T15:42:54.104-0700	error	queue/persistent_queue.go:380	Error deleting item from queue	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "failed deleting item from queue, got error from storage: file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).getNextItem
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:380
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).Read
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:333
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:43
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.104-0700	warn	queue/persistent_queue.go:532	Failed updating currently dispatched items, trying to delete the item first	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+2026-09-07T15:42:54.104-0700	error	queue/persistent_queue.go:380	Error deleting item from queue	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "failed deleting item from queue, got error from storage: file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).getNextItem
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:380
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).Read
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:333
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:43
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.104-0700	warn	queue/persistent_queue.go:532	Failed updating currently dispatched items, trying to delete the item first	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+2026-09-07T15:42:54.104-0700	error	queue/persistent_queue.go:380	Error deleting item from queue	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "failed deleting item from queue, got error from storage: file resize error: truncate /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/collector-0.147/storage_limit/queue/exporter_otlp_http__logs: file too large"}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).getNextItem
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:380
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*persistentQueue[...]).Read
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/persistent_queue.go:333
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:43
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.119-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.119-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.120-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.120-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.121-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.122-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.122-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.123-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.123-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:54.124-0700	error	internal/queue_sender.go:50	Exporting failed. Dropping data.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "otelcol.component.id": "otlp_http", "otelcol.component.kind": "exporter", "otelcol.signal": "logs", "error": "not retryable error: Permanent error: rpc error: code = InvalidArgument desc = error exporting items, request to http://127.0.0.1:37411/v1/logs responded with HTTP Status Code 400", "dropped_items": 0}
+go.opentelemetry.io/collector/exporter/exporterhelper/internal.NewQueueSender.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue_sender.go:50
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queuebatch.(*disabledBatcher[...]).Consume
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queuebatch/disabled_batcher.go:23
+go.opentelemetry.io/collector/exporter/exporterhelper/internal/queue.(*asyncQueue[...]).Start.func1
+	go.opentelemetry.io/collector/exporter/exporterhelper@v0.147.0/internal/queue/async_queue.go:47
+sync.(*WaitGroup).Go.func1
+	sync/waitgroup.go:258
+2026-09-07T15:42:55.349-0700	info	otelcol@v0.147.0/collector.go:375	Received signal from OS	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}, "signal": "terminated"}
+2026-09-07T15:42:55.349-0700	info	service@v0.147.0/service.go:278	Starting shutdown...	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}}
+2026-09-07T15:42:55.349-0700	info	extensions/extensions.go:68	Stopping extensions...	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}}
+2026-09-07T15:42:55.349-0700	info	service@v0.147.0/service.go:292	Shutdown complete.	{"resource": {"service.instance.id": "6b6ec579-8229-46ef-b822-39c686f30bb9", "service.name": "otelcol-contrib", "service.version": "0.147.0"}}
