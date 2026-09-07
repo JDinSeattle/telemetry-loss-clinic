@@ -54,3 +54,9 @@ Compose startup uses `service_healthy`, and health checks query actual HTTP endp
 ## Evidence boundaries
 
 [Measured container results](container-results.md) and `evidence/containers-20260907/` preserve raw source/sink IDs, container/image identities, recreated-volume names, hardening probes and scoped cleanup. The original native evidence stays unchanged. Clean container recreation on one host is not disk power-loss testing, persistent-format migration, multi-host fault tolerance or an exactly-once guarantee. Other native EFBIG tests still demonstrate acknowledged loss. No comparative throughput improvement is claimed.
+
+## CI follow-up: ingestion readiness and artifact retention
+
+The first container commit passed both Docker CI campaigns, but B's Python 3.12 native campaign failed in the persistent-crash case: only 15 of 30 exports were acknowledged, and the acknowledged IDs were recovered. [Original run](https://github.com/JDinSeattle/telemetry-loss-clinic/actions/runs/34170887754). This does not demonstrate loss of those acknowledged records. The native runner had waited only for the metrics endpoint, which is insufficient to establish OTLP admission readiness. A real HTTP regression now holds ingestion unavailable while metrics returns success; the runner must wait for an empty OTLP request to be accepted before admitting workload events. The original transport error cannot be conclusively reconstructed because its raw source-export file was not retained by that failed job.
+
+The native uploader also excluded the `.runs/` directory under its hidden-file default. B/D now explicitly include that scoped test directory and fail an upload with no files. B writes source exports and per-scenario results before acceptance assertions so future failures retain their exact boundary evidence. Existing event-loss assertions remain unchanged; refused source events are not discounted to make the campaign pass.

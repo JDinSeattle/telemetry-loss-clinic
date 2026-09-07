@@ -1,0 +1,41 @@
+receivers:
+  otlp:
+    protocols:
+      http:
+        endpoint: 127.0.0.1:45837
+exporters:
+  otlp_http:
+    endpoint: http://127.0.0.1:33463
+    encoding: json
+    compression: none
+    timeout: 200ms
+    retry_on_failure:
+      initial_interval: 100ms
+      max_interval: 200ms
+      max_elapsed_time: 20s
+    sending_queue:
+      enabled: true
+      num_consumers: 1
+      queue_size: 128
+      batch:
+        enabled: false
+      storage: file_storage
+extensions:
+  file_storage:
+    directory: /home/postedism/Desktop/crosscutting-careers/B-telemetry-loss-clinic/.runs/latest/persistent_crash/queue
+service:
+  extensions: [file_storage]
+  telemetry:
+    logs:
+      level: info
+    metrics:
+      readers:
+        - pull:
+            exporter:
+              prometheus:
+                host: 127.0.0.1
+                port: 52075
+  pipelines:
+    logs:
+      receivers: [otlp]
+      exporters: [otlp_http]

@@ -1,0 +1,33 @@
+{
+  "run_url": "https://github.com/JDinSeattle/telemetry-loss-clinic/actions/runs/34170887754",
+  "commit": "dae7afb3188828e3343aba54a6bb37cc874ddf10",
+  "job": "verify (3.12)",
+  "scenario": "persistent_crash",
+  "attempted": 30,
+  "collector_acknowledged": 15,
+  "sink_unique": 15,
+  "acknowledged_missing": [],
+  "unacknowledged_missing_ids": [
+    "persistent_crash-0000",
+    "persistent_crash-0001",
+    "persistent_crash-0002",
+    "persistent_crash-0003",
+    "persistent_crash-0004",
+    "persistent_crash-0005",
+    "persistent_crash-0006",
+    "persistent_crash-0007",
+    "persistent_crash-0008",
+    "persistent_crash-0009",
+    "persistent_crash-0010",
+    "persistent_crash-0011",
+    "persistent_crash-0012",
+    "persistent_crash-0013",
+    "persistent_crash-0014"
+  ],
+  "known_defects": [
+    "Metrics-only startup gate did not establish OTLP ingestion readiness.",
+    "Native artifact upload excluded .runs by hidden-file default; raw export records were written after the failing assertion."
+  ],
+  "attribution_limit": "Original transport errors are unavailable; a deterministic real HTTP regression proves the readiness weakness, but cannot reconstruct every refused CI export.",
+  "assertion_policy": "All original loss assertions retained; no event retries or missing-event discount added."
+}

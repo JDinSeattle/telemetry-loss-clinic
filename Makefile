@@ -10,6 +10,7 @@ evidence-check:
 	python3 evidence.py evidence/refresh-20260907
 	python3 evidence.py evidence/refresh-baseline-20260907
 	python3 evidence.py evidence/containers-20260907
+	python3 evidence.py evidence/native-ingestion-20260907
 
 container-verify:
 	python3 scripts/validate_containers.py --out .runs/container

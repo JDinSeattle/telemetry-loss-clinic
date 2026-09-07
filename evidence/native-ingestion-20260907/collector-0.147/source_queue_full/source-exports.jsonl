@@ -1,0 +1,7 @@
+{"event_id": "source_queue_full-0000", "created_unix_ns": 1788824960863608577, "collector_accepted": true, "http_status": 200, "rejected_log_records": 0, "export_ms": 0.808364}
+{"event_id": "source_queue_full-0001", "created_unix_ns": 1788824960865165720, "collector_accepted": true, "http_status": 200, "rejected_log_records": 0, "export_ms": 0.626911}
+{"event_id": "source_queue_full-0006", "created_unix_ns": 1788824960866827047, "collector_accepted": true, "http_status": 200, "rejected_log_records": 0, "export_ms": 0.454025}
+{"event_id": "source_queue_full-0011", "created_unix_ns": 1788824960868165273, "collector_accepted": true, "http_status": 200, "rejected_log_records": 0, "export_ms": 0.461509}
+{"event_id": "source_queue_full-0016", "created_unix_ns": 1788824960869663886, "collector_accepted": true, "http_status": 200, "rejected_log_records": 0, "export_ms": 0.478025}
+{"event_id": "source_queue_full-0021", "created_unix_ns": 1788824960871047532, "collector_accepted": true, "http_status": 200, "rejected_log_records": 0, "export_ms": 0.457001}
+{"event_id": "source_queue_full-0026", "created_unix_ns": 1788824960872464586, "collector_accepted": true, "http_status": 200, "rejected_log_records": 0, "export_ms": 0.54066}

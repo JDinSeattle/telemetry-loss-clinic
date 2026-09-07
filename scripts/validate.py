@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import argparse, contextlib, json, math, os, pathlib, resource, signal, socket, statistics, subprocess, sys, threading, time, urllib.request
+import argparse, contextlib, json, math, os, pathlib, resource, signal, socket, statistics, subprocess, sys, threading, time, urllib.request, urllib.error
 ROOT=pathlib.Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
 from clinic import Sink, Source, reconcile
 from evidence import command, digest, fresh, seal, write
@@ -63,13 +63,21 @@ def start(binary,cfg,log,limit=False):
     p=subprocess.Popen([str(binary),'--config',str(cfg)],stdout=log,stderr=subprocess.STDOUT,preexec_fn=limits if limit else None)
     return p
 
-def wait_ready(p,metrics):
-    end=time.monotonic()+10
+def wait_ready(p,metrics,receiver,timeout=10):
+    # Metrics can start before the OTLP listener/pipeline. Empty OTLP contains no event IDs.
+    end=time.monotonic()+timeout
     while time.monotonic()<end:
         if p.poll() is not None: raise RuntimeError(f'collector exited {p.returncode}')
-        try: get(f'http://127.0.0.1:{metrics}/metrics'); return
-        except OSError: time.sleep(.05)
-    raise TimeoutError('collector readiness')
+        try:
+            get(f'http://127.0.0.1:{metrics}/metrics')
+            req=urllib.request.Request(f'http://127.0.0.1:{receiver}/v1/logs',b'{"resourceLogs":[]}',{'Content-Type':'application/json'})
+            with urllib.request.urlopen(req,timeout=min(.4,max(.01,end-time.monotonic()))) as r:
+                reply=json.loads(r.read() or '{}')
+                if r.status==200 and int(reply.get('partialSuccess',{}).get('rejectedLogRecords',0))==0:return
+        except urllib.error.HTTPError as e:e.close()
+        except (OSError,ValueError,TypeError,AttributeError):pass
+        time.sleep(min(.05,max(0,end-time.monotonic())))
+    raise TimeoutError('collector OTLP ingestion readiness')
 
 def measure(p,metrics):
     row={'unix_ns':time.time_ns(),'alive':p.poll() is None}
@@ -97,7 +105,7 @@ def scenario(binary,out,name):
     samples=[]; timeline=[]; p=None
     with (directory/'collector.log').open('w') as log:
       try:
-        p=start(binary,cfg,log,name=='storage_limit'); wait_ready(p,metrics)
+        p=start(binary,cfg,log,name=='storage_limit'); wait_ready(p,metrics,receiver)
         components=command([str(binary),'components'])
         assert 'file_storage' in components and 'otlpreceiver' in components
         (directory/'components.txt').write_text(components)
@@ -109,10 +117,12 @@ def scenario(binary,out,name):
             if i%5==0: samples.append(measure(p,metrics))
             if name!='source_queue_full': time.sleep(.01)  # 100 events/s target, or explicit unpaced overload
         source.finish(); timeline.append({'event':'source_drained','unix_ns':time.time_ns()})
+        for filename,rows in [('source-attempts.jsonl',source.attempts),('source-exports.jsonl',source.results)]:
+            (directory/filename).write_text(''.join(json.dumps(r)+'\n' for r in rows))
         if name in ['memory_crash','persistent_crash']:
             p.kill(); p.wait(timeout=3); timeline.append({'event':'SIGKILL','unix_ns':time.time_ns()})
             samples.append(measure(p,metrics)); sink.mode='normal'
-            p=start(binary,cfg,log); wait_ready(p,metrics)
+            p=start(binary,cfg,log); wait_ready(p,metrics,receiver)
         else: sink.mode='normal'
         recovered=time.time_ns(); timeline.append({'event':'sink_recovery','unix_ns':recovered})
         # Wait for acknowledged events or bounded stable quiescence; losses remain losses.
@@ -141,15 +151,15 @@ def scenario(binary,out,name):
             successful_delivery_rps=len({r['event_id'] for r in sink.arrivals})/(time.monotonic()-started),
             source_export_p50_ms=statistics.median(r['export_ms'] for r in source.results),
             cpu_seconds_samples=[s.get('cpu_seconds') for s in samples])
+        for filename,rows in [('source-attempts.jsonl',source.attempts),('source-exports.jsonl',source.results),('resources.jsonl',samples)]:
+            (directory/filename).write_text(''.join(json.dumps(r)+'\n' for r in rows))
+        write(directory/'timeline.json',timeline); write(directory/'summary.json',result)
+        write(directory/'business.json',business)
         if name in ['normal','outage','disconnect','rate_limit','persistent_crash']: assert not result['missing_all'],result
         if name=='memory_crash': assert result['acknowledged_missing'] and result['observation_gaps'],result
         if name in ['queue_full','storage_limit']: assert result['export_unacknowledged'],result
         if name=='slow_ack': assert result['duplicates']>0,result
         if name=='source_queue_full': assert result['source_dropped'],result
-        for filename,rows in [('source-attempts.jsonl',source.attempts),('source-exports.jsonl',source.results),('resources.jsonl',samples)]:
-            (directory/filename).write_text(''.join(json.dumps(r)+'\n' for r in rows))
-        write(directory/'timeline.json',timeline); write(directory/'summary.json',result)
-        write(directory/'business.json',business)
         # Local instrumentation cost: paired identical workload with/without enqueue.
         if name=='normal':
             sink.path=directory/'overhead-sink.jsonl'
