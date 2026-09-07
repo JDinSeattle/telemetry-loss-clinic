@@ -1,0 +1,242 @@
+[
+  {
+    "enqueue_us": 8.632,
+    "event_id": "disconnect-0000",
+    "handler_us": 103.2,
+    "kernel_us": 94.568,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 9.773,
+    "event_id": "disconnect-0001",
+    "handler_us": 103.866,
+    "kernel_us": 94.093,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 18.43,
+    "event_id": "disconnect-0002",
+    "handler_us": 123.809,
+    "kernel_us": 105.379,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 12.283,
+    "event_id": "disconnect-0003",
+    "handler_us": 108.859,
+    "kernel_us": 96.576,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 13.805,
+    "event_id": "disconnect-0004",
+    "handler_us": 110.826,
+    "kernel_us": 97.021,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 15.875,
+    "event_id": "disconnect-0005",
+    "handler_us": 117.03,
+    "kernel_us": 101.155,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 18.781,
+    "event_id": "disconnect-0006",
+    "handler_us": 131.961,
+    "kernel_us": 113.18,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 17.417,
+    "event_id": "disconnect-0007",
+    "handler_us": 125.278,
+    "kernel_us": 107.861,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 16.771,
+    "event_id": "disconnect-0008",
+    "handler_us": 119.545,
+    "kernel_us": 102.774,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 13.367,
+    "event_id": "disconnect-0009",
+    "handler_us": 115.39,
+    "kernel_us": 102.023,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 10.481,
+    "event_id": "disconnect-0010",
+    "handler_us": 97.88,
+    "kernel_us": 87.399,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 9.844,
+    "event_id": "disconnect-0011",
+    "handler_us": 104.339,
+    "kernel_us": 94.495,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 11.208,
+    "event_id": "disconnect-0012",
+    "handler_us": 103.425,
+    "kernel_us": 92.217,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 10.289,
+    "event_id": "disconnect-0013",
+    "handler_us": 103.399,
+    "kernel_us": 93.11,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 7.42,
+    "event_id": "disconnect-0014",
+    "handler_us": 139.869,
+    "kernel_us": 132.449,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 7.631,
+    "event_id": "disconnect-0015",
+    "handler_us": 98.69,
+    "kernel_us": 91.059,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 11.401,
+    "event_id": "disconnect-0016",
+    "handler_us": 105.509,
+    "kernel_us": 94.108,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 6.666,
+    "event_id": "disconnect-0017",
+    "handler_us": 95.866,
+    "kernel_us": 89.2,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 11.757,
+    "event_id": "disconnect-0018",
+    "handler_us": 123.153,
+    "kernel_us": 111.396,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 9.443,
+    "event_id": "disconnect-0019",
+    "handler_us": 100.805,
+    "kernel_us": 91.362,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 17.213,
+    "event_id": "disconnect-0020",
+    "handler_us": 220.119,
+    "kernel_us": 202.906,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 18.29,
+    "event_id": "disconnect-0021",
+    "handler_us": 133.418,
+    "kernel_us": 115.128,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 7.904,
+    "event_id": "disconnect-0022",
+    "handler_us": 96.24,
+    "kernel_us": 88.336,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 7.496,
+    "event_id": "disconnect-0023",
+    "handler_us": 93.6,
+    "kernel_us": 86.104,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 10.774,
+    "event_id": "disconnect-0024",
+    "handler_us": 79.311,
+    "kernel_us": 68.537,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 12.09,
+    "event_id": "disconnect-0025",
+    "handler_us": 83.439,
+    "kernel_us": 71.349,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 14.902,
+    "event_id": "disconnect-0026",
+    "handler_us": 119.176,
+    "kernel_us": 104.274,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 14.986,
+    "event_id": "disconnect-0027",
+    "handler_us": 118.627,
+    "kernel_us": 103.641,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 17.64,
+    "event_id": "disconnect-0028",
+    "handler_us": 190.85,
+    "kernel_us": 173.21,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 19.578,
+    "event_id": "disconnect-0029",
+    "handler_us": 179.569,
+    "kernel_us": 159.991,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  }
+]

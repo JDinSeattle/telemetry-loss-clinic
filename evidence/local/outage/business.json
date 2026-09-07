@@ -1,0 +1,242 @@
+[
+  {
+    "enqueue_us": 8.88,
+    "event_id": "outage-0000",
+    "handler_us": 99.574,
+    "kernel_us": 90.694,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 12.047,
+    "event_id": "outage-0001",
+    "handler_us": 111.235,
+    "kernel_us": 99.188,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 10.746,
+    "event_id": "outage-0002",
+    "handler_us": 99.637,
+    "kernel_us": 88.891,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 8.283,
+    "event_id": "outage-0003",
+    "handler_us": 101.244,
+    "kernel_us": 92.961,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 12.942,
+    "event_id": "outage-0004",
+    "handler_us": 107.484,
+    "kernel_us": 94.542,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 11.816,
+    "event_id": "outage-0005",
+    "handler_us": 104.958,
+    "kernel_us": 93.142,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 11.122,
+    "event_id": "outage-0006",
+    "handler_us": 105.302,
+    "kernel_us": 94.18,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 22.796,
+    "event_id": "outage-0007",
+    "handler_us": 149.1,
+    "kernel_us": 126.304,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 55.697,
+    "event_id": "outage-0008",
+    "handler_us": 556.794,
+    "kernel_us": 501.097,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 13.088,
+    "event_id": "outage-0009",
+    "handler_us": 121.072,
+    "kernel_us": 107.984,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 10.851,
+    "event_id": "outage-0010",
+    "handler_us": 107.372,
+    "kernel_us": 96.521,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 15.53,
+    "event_id": "outage-0011",
+    "handler_us": 113.311,
+    "kernel_us": 97.781,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 12.692,
+    "event_id": "outage-0012",
+    "handler_us": 109.051,
+    "kernel_us": 96.359,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 15.511,
+    "event_id": "outage-0013",
+    "handler_us": 117.826,
+    "kernel_us": 102.315,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 12.152,
+    "event_id": "outage-0014",
+    "handler_us": 103.959,
+    "kernel_us": 91.807,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 17.481,
+    "event_id": "outage-0015",
+    "handler_us": 119.93,
+    "kernel_us": 102.449,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 20.361,
+    "event_id": "outage-0016",
+    "handler_us": 137.795,
+    "kernel_us": 117.434,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 16.354,
+    "event_id": "outage-0017",
+    "handler_us": 119.7,
+    "kernel_us": 103.346,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 14.628,
+    "event_id": "outage-0018",
+    "handler_us": 117.05,
+    "kernel_us": 102.422,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 15.7,
+    "event_id": "outage-0019",
+    "handler_us": 114.829,
+    "kernel_us": 99.129,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 10.484,
+    "event_id": "outage-0020",
+    "handler_us": 109.96,
+    "kernel_us": 99.476,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 16.637,
+    "event_id": "outage-0021",
+    "handler_us": 120.2,
+    "kernel_us": 103.563,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 12.188,
+    "event_id": "outage-0022",
+    "handler_us": 113.131,
+    "kernel_us": 100.943,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 7.971,
+    "event_id": "outage-0023",
+    "handler_us": 99.237,
+    "kernel_us": 91.266,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 19.39,
+    "event_id": "outage-0024",
+    "handler_us": 204.795,
+    "kernel_us": 185.405,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 10.623,
+    "event_id": "outage-0025",
+    "handler_us": 181.001,
+    "kernel_us": 170.378,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 14.103,
+    "event_id": "outage-0026",
+    "handler_us": 121.79,
+    "kernel_us": 107.687,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 12.885,
+    "event_id": "outage-0027",
+    "handler_us": 149.301,
+    "kernel_us": 136.416,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 10.916,
+    "event_id": "outage-0028",
+    "handler_us": 102.344,
+    "kernel_us": 91.428,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  },
+  {
+    "enqueue_us": 19.665,
+    "event_id": "outage-0029",
+    "handler_us": 143.438,
+    "kernel_us": 123.773,
+    "result_sha256": "62b4b4dd67908cfd251b500ff068648011c46cccb696ef0e8ebf4965cfdba8c0",
+    "source_accepted": true
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "disconnect": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_queue_capacity": 128.0,
+      "otelcol_exporter_queue_size": 0.0,
+      "otelcol_exporter_sent_log_records_total": 30.0,
+      "otelcol_receiver_accepted_log_records_total": 30.0,
+      "otelcol_receiver_failed_log_records_total": 0.0,
+      "otelcol_receiver_refused_log_records_total": 0.0
+    },
+    "restart": false,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  },
+  "memory_crash": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_queue_capacity": 128.0,
+      "otelcol_exporter_queue_size": 0.0
+    },
+    "restart": true,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  },
+  "normal": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_queue_capacity": 128.0,
+      "otelcol_exporter_queue_size": 0.0,
+      "otelcol_exporter_sent_log_records_total": 30.0,
+      "otelcol_receiver_accepted_log_records_total": 30.0,
+      "otelcol_receiver_failed_log_records_total": 0.0,
+      "otelcol_receiver_refused_log_records_total": 0.0
+    },
+    "restart": false,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  },
+  "outage": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_queue_capacity": 128.0,
+      "otelcol_exporter_queue_size": 0.0,
+      "otelcol_exporter_sent_log_records_total": 30.0,
+      "otelcol_receiver_accepted_log_records_total": 30.0,
+      "otelcol_receiver_failed_log_records_total": 0.0,
+      "otelcol_receiver_refused_log_records_total": 0.0
+    },
+    "restart": false,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  },
+  "persistent_crash": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_queue_capacity": 128.0,
+      "otelcol_exporter_queue_size": 0.0,
+      "otelcol_exporter_sent_log_records_total": 30.0
+    },
+    "restart": true,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  },
+  "queue_full": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_enqueue_failed_log_records_total": 28.0,
+      "otelcol_exporter_queue_capacity": 2.0,
+      "otelcol_exporter_queue_size": 0.0,
+      "otelcol_exporter_sent_log_records_total": 2.0,
+      "otelcol_receiver_accepted_log_records_total": 2.0,
+      "otelcol_receiver_failed_log_records_total": 0.0,
+      "otelcol_receiver_refused_log_records_total": 28.0
+    },
+    "restart": false,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  },
+  "rate_limit": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_queue_capacity": 128.0,
+      "otelcol_exporter_queue_size": 0.0,
+      "otelcol_exporter_sent_log_records_total": 30.0,
+      "otelcol_receiver_accepted_log_records_total": 30.0,
+      "otelcol_receiver_failed_log_records_total": 0.0,
+      "otelcol_receiver_refused_log_records_total": 0.0
+    },
+    "restart": false,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  },
+  "slow_ack": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_queue_capacity": 128.0,
+      "otelcol_exporter_queue_size": 0.0,
+      "otelcol_exporter_sent_log_records_total": 30.0,
+      "otelcol_receiver_accepted_log_records_total": 30.0,
+      "otelcol_receiver_failed_log_records_total": 0.0,
+      "otelcol_receiver_refused_log_records_total": 0.0
+    },
+    "restart": false,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  },
+  "source_queue_full": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_queue_capacity": 128.0,
+      "otelcol_exporter_queue_size": 0.0,
+      "otelcol_exporter_sent_log_records_total": 7.0,
+      "otelcol_receiver_accepted_log_records_total": 7.0,
+      "otelcol_receiver_failed_log_records_total": 0.0,
+      "otelcol_receiver_refused_log_records_total": 0.0
+    },
+    "restart": false,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  },
+  "storage_limit": {
+    "final_process_epoch_counters": {
+      "otelcol_exporter_enqueue_failed_log_records_total": 21.0,
+      "otelcol_exporter_queue_capacity": 128.0,
+      "otelcol_exporter_queue_size": 0.0,
+      "otelcol_exporter_sent_log_records_total": 3.0,
+      "otelcol_receiver_accepted_log_records_total": 9.0,
+      "otelcol_receiver_failed_log_records_total": 0.0,
+      "otelcol_receiver_refused_log_records_total": 21.0
+    },
+    "restart": false,
+    "warning": "Counters reset on restart; do not compare final epoch receive count with total source sends."
+  }
+}
