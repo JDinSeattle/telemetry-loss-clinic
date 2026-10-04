@@ -1,5 +1,23 @@
 # Telemetry Loss Clinic
 
+## Experience Bank results
+
+The results below are the owner-confirmed results from a separate cloud-hosted test environment, synchronized from the Experience Bank. The experiments retain the local, synthetic, simulator, CPU, Docker and single-host boundaries stated in each result; cloud hosting does not imply production deployment. This repository refresh does not represent a rerun of those measurements. Earlier dated evidence below remains tied to its own source, configuration and denominator.
+
+1. Reconciled telemetry by event ID (run_id/sequence) across application admission, Collector ACK, and fsync-backed sink receipt in a Linux amd64 Docker Compose lab with Collector 0.160.0 in the container and separate native 0.147.0 runs, tracking attempted, accepted, collector_acked, sink_unique, and sink_total separately so raw failures, rejections, and duplicates keep their own meaning.
+
+2. Replaced the post-close false admission that accepted one event after the exporter thread had exited and never exported it with an open/closing/closed lifecycle decided under one lock; in a fixed 4-producer close race with 25 attempts each, the run produced 100 attempts, 64 accepted, and 36 closing_rejected, and the sink held 64 unique IDs with no post-close acceptance because admission and closing share the lock rather than depending on timing.
+
+3. Exposed the acknowledgement boundary: after blocking the sink and sending 30 events, a SIGKILL left the memory queue at sink_unique=0 after restart while the file_storage persistent queue on the same named volume recovered sink_unique=30; an injected ACK-loss variant produced sink_total=32 with sink_unique=30, identifying 2 duplicates and ruling out an exactly-once claim.
+
+4. Measured recovery from the new container's actual OTLP ingestion readiness: the 30 persistent records landed within 2.4 seconds in a single recovery observation, while EFBIG was kept as a separate per-file size fault rather than evidence about disk-full or power-loss behavior.
+
+5. Ran the two-release campaign as 20 scenario-runs / 600 attempts (two versions times 10 scenarios of 30 events each), counted the Docker campaign's 5 scenarios / 150 attempts separately rather than summing them into one unique event set, and brought the latest native focused suite to 11 tests.
+
+6. Implemented the drain boundary so that when finish's join budget expires the in-flight urllib request is not preempted: the source returns timeout, allows a retryable drain, and keeps rejecting new events while in the closing state.
+
+See the [implementation and reproduction map](docs/experience-bank-alignment.md) for per-result source/tests, reproduction commands and limitations.
+
 [![verify](https://github.com/JDinSeattle/telemetry-loss-clinic/actions/workflows/ci.yml/badge.svg)](https://github.com/JDinSeattle/telemetry-loss-clinic/actions/workflows/ci.yml)
 
 A real OpenTelemetry Collector failure laboratory with an explicit Python export queue, a small projection service, and a self-written OTLP/HTTP receiver that fsyncs each accepted log before acknowledging it. Fixed event IDs make every source drop, unacknowledged export, duplicate and acknowledged-but-missing event inspectable.

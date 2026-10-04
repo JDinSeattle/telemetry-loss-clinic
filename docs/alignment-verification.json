@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-04T04:18:23.199316+00:00",
+  "provenance": "Owner-confirmed cloud results remain separate from these local checks.",
+  "notes": [
+    "11 regressions and both native Collector release campaigns passed; evidence manifests validate. Docker volume-recovery campaign not rerun."
+  ],
+  "checks": [
+    {
+      "command": "make verify evidence-check",
+      "exit_code": 0,
+      "elapsed_seconds": 53.93,
+      "log_sha256": "89adc27a97e4df041b301943ee98fdec6ed185e4981ef6d18261cf5f39da649c"
+    }
+  ]
+}
